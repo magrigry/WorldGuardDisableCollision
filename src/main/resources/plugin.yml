@@ -1,0 +1,9 @@
+name: WorldGuardDisableCollisions
+version: ${project.version}
+main: over2craft.worldguarddisablecollisions.WorldGuardDisableCollisions
+api-version: 1.16
+prefix: [ Over2Craft ]
+depend: [WorldGuard]
+authors: [ Over2Craft ]
+description: Disable players collision by region
+website: http://over2craft.com
