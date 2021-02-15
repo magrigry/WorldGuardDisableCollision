@@ -28,8 +28,6 @@ public class Collisions extends FlagValueChangeHandler<Boolean> {
 
     @Override
     protected void onInitialValue(LocalPlayer player, ApplicableRegionSet set, Boolean value) {
-        Bukkit.getPlayer(player.getUniqueId()).sendMessage("onInitialValue");
-        System.out.println("onInitialValue");
     }
 
     @Override
