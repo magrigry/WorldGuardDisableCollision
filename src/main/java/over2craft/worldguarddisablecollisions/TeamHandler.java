@@ -15,7 +15,13 @@ public class TeamHandler {
     public static void loadTeam() {
         ScoreboardManager sm = Bukkit.getScoreboardManager();
         Scoreboard board = sm.getMainScoreboard();
-        team = board.registerNewTeam(team_name);
+
+        if (board.getTeam(team_name) == null) {
+            team = board.registerNewTeam(team_name);
+        } else {
+            team = board.getTeam(team_name);
+        }
+
         team.setOption(Team.Option.COLLISION_RULE, Team.OptionStatus.NEVER);
     }
 
